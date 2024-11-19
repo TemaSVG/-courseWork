@@ -1,13 +1,11 @@
 import java.util.Objects;
 
 public class Employee {
-   private  String fullName;
-   private int departmentNumber;
-   private double salary;
-   private static int count;
-   private int id;
-
-
+    private String fullName;
+    private int departmentNumber;
+    private double salary;
+    private static int count;
+    private int id;
 
 
     public Employee(String fullName, int departmentNumber, double salary) {
@@ -52,7 +50,7 @@ public class Employee {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof Employee employee)){
+        if (!(o instanceof Employee employee)) {
             return false;
         }
         return departmentNumber == employee.departmentNumber && Double.compare(salary, employee.salary) == 0 && Objects.equals(fullName, employee.fullName);
